@@ -6,7 +6,10 @@ const routes = [
   {
     path: '',
     component: HomePageComponent
+
+
   }
+
 ];
 
 
