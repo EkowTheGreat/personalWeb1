@@ -1,0 +1,374 @@
+.container
+    background-color: aqua
+    min-height: 30vh
+
+.container1
+    height: 100vh
+    min-height: 95vh
+
+    display: -webkit-flexbox
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-flex-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center
+    justify-content: space-around
+
+.card
+    color: black
+    background-color: aliceblue
+    size: inherit
+    width: -webkit-fill-available
+    min-height: 25vh
+    height: 30vh
+    max-width: 50vw
+
+.card.bg1
+    position: inherit
+    //background: url(coral-nebula-xy-1920x1080.jpg)
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+    z-index: -1
+    min-height: 20vh
+    max-height: 30vh
+    max-width: 50vw
+
+.card.bg2
+    position: inherit
+    //background: url(zaCI9O.jpg)
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+    z-index: -1
+    min-height: 20vh
+    max-height: 30vh
+    max-width: 50vw
+
+.card.bg3
+    position: inherit
+    //background: url(bassDash2.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    background-color: black
+    z-index: -1
+    max-height: 50vh
+    max-width: 50vw
+
+.card.bg4
+    position: inherit
+    //background: url(facecolourcircle.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    z-index: -1
+    max-height: 50vh
+    max-width: 50vw
+
+.card.bg5
+    position: inherit
+    //background: url(phonebg4.png)
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+    z-index: -1
+    max-height: 50vh
+    max-width: 50vw
+
+.card.bg6
+    position: inherit
+    //background: url(skyfall1.png)
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+    z-index: 1
+    max-height: 50vh
+    max-width: 50vw
+
+.card p
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    color: #ffffff00
+    position: relative
+    bottom: 20vh
+    z-index: 1
+
+.container1.bg
+ // background: url(cover_1242_dd2ca0a4b707ba48c13f4820f9587389.png)
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+    z-index: -1
+    min-height: 100vh
+    max-height: 100vh
+    max-width: inherit
+
+.container1 h1
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    position: absolute
+    top: 33vh
+    font-size: 250px
+    border-bottom-style: solid
+
+.container1 h2
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    position: absolute
+    top: 73vh
+    font-size: 80px
+
+.container1 h3
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    position: absolute
+    top: 81vh
+    font-size: 80px
+
+.container1 #arrow1
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    position: absolute
+    top: 73vh
+    font-size: 60px
+    display: none
+
+.container1 #arrow2
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    position: absolute
+    top: 79vh
+    font-size: 70px
+    display: none
+
+.container1 #arrow3
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    position: absolute
+    top: 85vh
+    font-size: 75px
+    display: none
+
+.container2
+    background-color: rgb(0, 0, 0)
+    min-height: 100vh
+    max-height: 100vh
+
+.container2 #container2foot
+    min-height: 5vh
+    place-items: initial
+    height: 5vh
+    background-color: black
+    contain: content
+
+    width: -webkit-fill-available
+
+.container2 #container2Head
+    min-height: 5vh
+    place-items: initial
+    height: 5vh
+    background-color: black
+    contain: content
+    width: -webkit-fill-available
+
+.container3
+    background-color: rgb(0, 0, 0)
+    min-height: 100vh
+    height: 100vh
+
+.picGallery
+    max-width: -webkit-fill-available
+    display: flex
+    flex-direction: row
+
+.picGallery
+    max-width: -webkit-fill-available
+    display: flex
+    flex-direction: row
+
+.imgSquare
+    display: block
+
+    max-width: 30vw
+    max-height: 30wh
+
+.imgRectangle
+    display: block
+
+    max-width: 25%
+
+    max-height: 80%
+
+.modal
+    //display: none 
+    position: fixed  
+    z-index: 1 /* Sit on top */
+    left: 0
+
+    width: 100% /* Full width */
+    height: 100vh /* Full height */
+    overflow: hidden /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0) /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8) /* Black w/ opacity */
+
+/* Modal Content/Box */
+
+    &-content
+        //background-image: url(black-gloss.jpg)
+        background-repeat: no-repeat
+        background-position: top
+        background-size: cover
+        position: relative
+        background-color: #1d1d1d
+        height: 23vh
+        width: 100% /* Could be more or less, depending on screen size */
+        border: 6px solid rgb(0, 0, 0)
+        -webkit-border-top-left-radius: 90%
+        -webkit-border-top-right-radius: 90%
+        -webkit-border-bottom-right-radius: 1px
+        -webkit-border-bottom-left-radius: 1px
+        -moz-border-radius-topleft: 90%
+        -moz-border-radius-topright: 90%
+        -moz-border-radius-bottomright: 1px
+        -moz-border-radius-bottomleft: 1px
+        border-top-left-radius: 90%
+        border-top-right-radius: 90%
+        border-bottom-right-radius: 1px
+        border-bottom-left-radius: 1px
+
+#container2content
+    position: fixed
+    top: 176vh
+
+#container2Modal
+    top: 100vh
+    display: none
+
+#container3content
+    position: fixed
+    top: 276vh
+
+#container3Modal
+    top: 200vh
+    display: none
+
+.navPopUp
+    
+    background-image: url()
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+.navBg
+    width: 100vw
+    background: url()
+    background-repeat: no-repeat
+    background-position: top
+    background-size: contain
+    position: relative
+    top: 3vh
+
+.navBtn1
+    height: 20vh
+    width: -webkit-fill-available
+    text-align: right
+    background-color: #1d1d1d
+
+    filter: blur(5px)
+    -webkit-filter: blur(5px)
+    -moz-filter: blur(5px)
+    -o-filter: blur(5px)
+    -ms-filter: blur(5px)
+
+    top: 0px
+    -webkit-border-top-left-radius: 80%
+    -webkit-border-top-right-radius: 0vh
+    -webkit-border-bottom-right-radius: 1px
+    -webkit-border-bottom-left-radius: 1px
+    -moz-border-radius-topleft: 80%
+    -moz-border-radius-topright: 0vw
+    -moz-border-radius-bottomright: 1px
+    -moz-border-radius-bottomleft: 1px
+    border-top-left-radius: 80%
+    border-top-right-radius: 0vw
+    border-bottom-right-radius: 1px
+    border-bottom-left-radius: 1px
+
+    border-color: black
+    border-top-color: black
+    border-right: #7d7d7d
+    border-top-style: groove
+    border-left-style: groove
+    border-right-style: groove
+
+    //background: url(Black-carbon-fiber-vector05.jpg)
+    background-repeat: no-repeat
+    background-position: revert
+    background-size: cover
+    position: relative
+
+
+    & .navBtn1Text
+        color: #1d29cf
+        position: relative
+        text-align: center
+        top: 6vh
+
+.navBtn2
+    height: 20vh
+    width: -webkit-fill-available
+    text-align: left
+    background-color: #1d1d1d
+
+    filter: blur(5px)
+    -webkit-filter: blur(5px)
+    -moz-filter: blur(5px)
+    -o-filter: blur(5px)
+    -ms-filter: blur(5px)
+
+    top: 0px
+    -webkit-border-top-left-radius: 0vh
+    -webkit-border-top-right-radius: 80%
+    -webkit-border-bottom-right-radius: 1px
+    -webkit-border-bottom-left-radius: 1px
+    -moz-border-radius-topleft: 0vh
+    -moz-border-radius-topright: 80%
+    -moz-border-radius-bottomright: 1px
+    -moz-border-radius-bottomleft: 1px
+    border-top-left-radius: 0vh
+    border-top-right-radius: 80%
+    border-bottom-right-radius: 1px
+    border-bottom-left-radius: 1px
+
+    border-color: black
+    border-left-color: #7d7d7d
+    border-left-style: groove
+    border-right-style: groove
+    border-top-color: black
+    border-top-style: groove
+
+    //background: url(Black-carbon-fiber-vector05.jpg)
+    background-repeat: no-repeat
+    background-position: revert
+    background-size: cover
+    position: relative
+
+
+    & .navBtn2Text
+        position: relative
+        color: #1d29cf
+        text-align: center
+        top: 6vh
+
+.blur
+    filter: blur(5px)
+    -webkit-filter: blur(5px)
+    -moz-filter: blur(5px)
+    -o-filter: blur(5px)
+    -ms-filter: blur(5px)
+
+.removeBlur
+    filter: blur(0px)!important
+    -webkit-filter: blur(0px)!important
+    -moz-filter: blur(0px)!important
+    -o-filter: blur(0px)!important
+    -ms-filter: blur(0px)!important
+
+.hidden
+    color: rgb(255, 255, 255) !important
