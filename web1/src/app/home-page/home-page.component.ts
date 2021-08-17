@@ -28,16 +28,16 @@ export class HomePageComponent implements OnInit {
     let boxBgy = document.querySelector(box);
     let pColoury = document.querySelector(p);
 
-    boxBgy?.classList.toggle('blur');
-    pColoury?.classList.toggle('hidden');
+    //boxBgy?.classList.toggle('blur');
+    //pColoury?.classList.toggle('hidden');
   }
   mouseOut(box: string, p: string) {
 
     let boxBgx = document.querySelector(box);
     let pColourx = document.querySelector(p);
 
-    boxBgx?.classList.toggle('blur');
-    pColourx?.classList.toggle('hidden');
+    //boxBgx?.classList.toggle('blur');
+    //pColourx?.classList.toggle('hidden');
   }
   viewContainer1() {
     var container1 = document.getElementById("toolbar")!;

@@ -17,82 +17,56 @@
     justify-content: space-around
 
 .card
-    color: black
+    color: rgba(255, 255, 255, 0)!important
     background-color: aliceblue
     size: inherit
     width: -webkit-fill-available
     min-height: 25vh
     height: 30vh
     max-width: 50vw
+    contain: strict
+.card:hover
+    color: white !important
+    background-color: red
+      filter: blur(5px)
+    -webkit-filter: blur(5px)
+    -moz-filter: blur(5px)
+    -o-filter: blur(5px)
+    -ms-filter: blur(5px)
 
-.card.bg1
+.card#box4
+    position: inherit
+    background: url("/../assets/bassDash2.png")
+    background-color: black
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    z-index: -1
+    max-height: 50vh
+    max-width: 50vw
+
+.card.bg
     position: inherit
     //background: url(coral-nebula-xy-1920x1080.jpg)
-    background-repeat: no-repeat
-    background-position: top
-    background-size: cover
-    z-index: -1
-    min-height: 20vh
-    max-height: 30vh
-    max-width: 50vw
-
-.card.bg2
-    position: inherit
-    //background: url(zaCI9O.jpg)
-    background-repeat: no-repeat
-    background-position: top
-    background-size: cover
-    z-index: -1
-    min-height: 20vh
-    max-height: 30vh
-    max-width: 50vw
-
-.card.bg3
-    position: inherit
-    //background: url(bassDash2.png)
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
     background-color: black
-    z-index: -1
-    max-height: 50vh
-    max-width: 50vw
-
-.card.bg4
-    position: inherit
-    //background: url(facecolourcircle.png)
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-    z-index: -1
-    max-height: 50vh
-    max-width: 50vw
-
-.card.bg5
-    position: inherit
-    //background: url(phonebg4.png)
     background-repeat: no-repeat
     background-position: top
     background-size: cover
     z-index: -1
-    max-height: 50vh
+    min-height: 20vh
+    max-height: 30vh
     max-width: 50vw
 
-.card.bg6
-    position: inherit
-    //background: url(skyfall1.png)
-    background-repeat: no-repeat
-    background-position: top
-    background-size: cover
-    z-index: 1
-    max-height: 50vh
-    max-width: 50vw
+.card.bg:hover
 
 .card p
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
-    color: #ffffff00
+    font-size: 200%
     position: relative
-    bottom: 20vh
+
+    color: white
+    position: relative
+    bottom: 1%
     z-index: 1
 
 .container1.bg
