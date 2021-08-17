@@ -18,28 +18,36 @@
 
 .card
     color: rgba(255, 255, 255, 0)!important
-    background-color: aliceblue
+
     size: inherit
     width: -webkit-fill-available
     min-height: 25vh
-    height: 30vh
+    height: initial
     min-width: 45vw
     width: 50vw
     contain: strict
-.card:hover
-    .bg
-        filter: blur(5px)
-        -webkit-filter: blur(5px)
-        -moz-filter: blur(5px)
-        -o-filter: blur(5px)
-        -ms-filter: blur(5px)
-        color: white !important
-        background-color: red  !important
-    p
 
-        
+.card:hover
+
+    .bg
+
+        color: white !important
+        //background-image: radial-gradient(circle at 100%,#000000, #565151)
+        background-color: hsl(12,0 ,0,0.7) !important
+        //background-image: url('/../assets/Black-carbon.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+
+    img
+        filter: grayscale(0)
+
+    #p-overlay p
+
         display: inherit
-        
+    #p-overlay
+        background-color: hsl(233,5 ,30,0.8 )
+
 
 .card#box4
    /* position: inherit
@@ -55,28 +63,61 @@
     max-width: 50vw*/
 
 .card.bg
+
+    margin: 0px
     position: inherit
-    background-color: black
+    background-color: hsl(0,0 ,0,0.2 )
     background-repeat: no-repeat
     background-position: top
     background-size: cover
     z-index: -1
     min-height: 20vh
-    max-height: 30vh
+    height: 28vh
     min-width: 40vw
-    max-width: 50vw
-
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+.card img
+    filter: grayscale(1)
 .card p
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
     font-size: 200%
     color: white
-    z-index: 1
+    z-index: 0
     position: relative
-    bottom: 40%
-    height: 40%
+    bottom: 60%
+    height: 10%
     margin: 0px
-    background-color: hsl(15,3 ,20,0.8 )
+    //background-color: hsl(15,3 ,20,0.8 )
+    display: inherit
+.card #p-overlay
+    
+    z-index: 1
+    position: absolute
+    top: 0vh
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    
+    
+    
+.card #p-overlay p
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+    font-size: 200%
+    color: white
+    z-index: 2
+    position: initial
+    top: 0px
     display: none
+    
+    
+    
+    
+    
 
 .container1.bg
  // background: url(cover_1242_dd2ca0a4b707ba48c13f4820f9587389.png)
