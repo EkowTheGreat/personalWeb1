@@ -23,31 +23,39 @@
     width: -webkit-fill-available
     min-height: 25vh
     height: 30vh
-    max-width: 50vw
+    min-width: 45vw
+    width: 50vw
     contain: strict
 .card:hover
-    color: white !important
-    background-color: red
-      filter: blur(5px)
-    -webkit-filter: blur(5px)
-    -moz-filter: blur(5px)
-    -o-filter: blur(5px)
-    -ms-filter: blur(5px)
+    .bg
+        filter: blur(5px)
+        -webkit-filter: blur(5px)
+        -moz-filter: blur(5px)
+        -o-filter: blur(5px)
+        -ms-filter: blur(5px)
+        color: white !important
+        background-color: red  !important
+    p
+
+        
+        display: inherit
+        
 
 .card#box4
-    position: inherit
-    background: url("/../assets/bassDash2.png")
+   /* position: inherit
+    background: url("/../assets/bassBg.png")
     background-color: black
     background-repeat: no-repeat
     background-position: center
     background-size: contain
     z-index: -1
-    max-height: 50vh
-    max-width: 50vw
+    min-height: 22vh
+    max-height: 30vh
+    min-width: 30vw
+    max-width: 50vw*/
 
 .card.bg
     position: inherit
-    //background: url(coral-nebula-xy-1920x1080.jpg)
     background-color: black
     background-repeat: no-repeat
     background-position: top
@@ -55,19 +63,20 @@
     z-index: -1
     min-height: 20vh
     max-height: 30vh
+    min-width: 40vw
     max-width: 50vw
-
-.card.bg:hover
 
 .card p
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
     font-size: 200%
-    position: relative
-
     color: white
-    position: relative
-    bottom: 1%
     z-index: 1
+    position: relative
+    bottom: 40%
+    height: 40%
+    margin: 0px
+    background-color: hsl(15,3 ,20,0.8 )
+    display: none
 
 .container1.bg
  // background: url(cover_1242_dd2ca0a4b707ba48c13f4820f9587389.png)
