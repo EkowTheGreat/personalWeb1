@@ -18,10 +18,10 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
     //console.log(this.name);
-    animateWelcome();
-    moveArrows();
+    //animateWelcome();
+    //moveArrows();
     //blink arrow 
-    blinkArrow();
+    //blinkArrow();
   }
   mouseOver(box: string, p: string) {
 
