@@ -1,17 +1,10 @@
-<div class="toolbar" id="toolbar">
-
-    <p> EkowTheGreat © 2021</p>
-    <p> EkowTheGreat © 2021</p>
-    <a href="#container2"> EkowTheGreat © 2021</a>
-    <p> EkowTheGreat © 2021</p>
-
-</div>
+<app-toolbar></app-toolbar>
 
 <div class="pgContent">
     <div class="container1" id="container1">
         <div class=" container1bg" id="c1Bg">
             <div class=" container1bg2">
-                
+
             </div>
 
         </div>
@@ -25,10 +18,11 @@
 
     </div>
     <div class="container2" id="container2">
-        <div id="container2Head">
-            <h2>Socials</h2>
-        </div>
+
         <div class="verticalDisplay">
+            <div class="displayTitle">
+                <h2>Social-Links</h2>
+            </div>
             <div class="verticalDisplay2">
                 <div class="horizontalDisplay">
                     <div id="card1" class="card" (mouseover)="mouseOver('#box1', '#p1')"
@@ -37,7 +31,7 @@
                             <img alt="https://icons8.com/icon/32323/instagram-logo"
                                 src="https://img.icons8.com/color/240/000000/instagram-new--v1.png" />
                         </div>
-                       
+
 
 
                     </div>
@@ -64,7 +58,7 @@
                             <img alt="https://icons8.com/icon/19318/youtube-play-button"
                                 src="https://img.icons8.com/color/240/000000/youtube-play.png" />
                         </div>
-                        
+
 
                     </div>
                     <div id="card4" class="card" (mouseover)="mouseOver('#box4', '#p4')"
@@ -77,7 +71,7 @@
                                 </p>
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -89,7 +83,7 @@
                                 src="https://img.icons8.com/fluency/240/000000/discord-new-logo.png" />
 
                         </div>
-                        
+
 
                     </div>
                     <div id="card6" class="card" (mouseover)="mouseOver('#box6', '#p6')"
@@ -98,7 +92,7 @@
                             <img alt="https://icons8.com/icon/MFZCdvQbJtV1/twitch"
                                 src="https://img.icons8.com/color/240/000000/twitch--v1.png" />
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -107,22 +101,28 @@
 
 
         <div id="container2foot">
-            <p>
+            <div class="footBtn">
+                <p>
 
-                <a (mouseover)="displayNav('container2Modal')">---Display Navigation----</a>
-            </p>
+                    <a (mouseover)="displayNav('container2Modal')">---Display Navigation----</a>
+                </p>
+            </div>
+
 
         </div>
 
     </div>
     <div class="container3" id="container3">
-        <h2>Gallery</h2>
+
         <div class="verticalDisplay">
+            <div class="displayTitle">
+                <h2>Gallery</h2>
+            </div>
 
             <div class="horizontalDisplay">
-                <img class="imgRectangle" src="skyfall1.png" alt="Girl in a jacket">
-                <img class="imgRectangle" src="zaCI9O.jpg" alt="Girl in a jacket">
-                <img class="imgRectangle" src="phonebg4.png" alt="Girl in a jacket">
+                <img class="imgRectangle" src="/../assets/skyfall1.png" alt="Girl in a jacket">
+                
+                <img class="imgRectangle" src="/../assets/phonebg4.png" alt="Girl in a jacket">
             </div>
 
         </div>
@@ -130,103 +130,17 @@
 
 
 </div>
-<div id="container2Modal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content" id="container2content" (mouseleave)="hideNav('container2Modal')">
-
-        <div class="navBg">
-            <div class="navPopUp" id="nav1">
-                <div (click)="viewContainer1()" (mouseover)=" mouseOverNav('#container2Btn1', '#nav2Btn1Text')"
-                    (mouseleave)=" mouseOutNav('#container2Btn1', '#nav2Btn1Text')" id="container2Btn1" class="navBtn1">
-
-                    <div id="nav2Btn1Text" class="navBtn1Text"
-                        (mouseover)=" mouseOverNav('#container2Btn1', '#nav2Btn1Text')"
-                        (mouseleave)=" mouseOutNav('#container2Btn1', '#nav2Btn1Text')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                            class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
-                        </svg>
-
-                    </div>
-
-                </div>
-
-                <div (click)="viewContainer3()" (mouseover)=" mouseOverNav('#container2Btn2', '#nav2Btn2Text')"
-                    (mouseleave)=" mouseOutNav('#container2Btn2', '#nav2Btn2Text')" id="container2Btn2" class="navBtn2">
-
-                    <div id="nav2Btn2Text" class="navBtn2Text"
-                        (mouseover)=" mouseOverNav('#container2Btn2', '#nav2Btn2Text')"
-                        (mouseleave)=" mouseOutNav('#container2Btn2', '#nav2Btn2Text')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                            class="bi bi-camera-fill" viewBox="0 0 16 16">
-                            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-                            <path
-                                d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
-                        </svg>
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-        </div>
-
-    </div>
-
-</div>
-<div id="container3Modal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content" id="container3content" (mouseleave)="hideNav('container3Modal')">
-
-        <div class="navBg">
-            <div class="navPopUp" id="nav2">
-                <div (click)="viewContainer1()" (mouseover)=" mouseOverNav('#container3Btn1', '#nav3Btn1Text')"
-                    (mousleave)=" mouseOutNav('#container3Btn1', '#nav3Btn1Text')" id="container3Btn1" class="navBtn1">
-
-                    <div id="nav3Btn1Text" class="navBtn1Text"
-                        (mouseover)=" mouseOverNav('#container3Btn1', '#nav3Btn1Text')"
-                        (mousleave)=" mouseOutNav('#container3Btn1', '#nav3Btn1Text')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                            class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
-                        </svg>
-
-                    </div>
-
-                </div>
-
-                <div (click)="viewContainer2()" (mouseover)=" mouseOverNav('#container3Btn2', '#nav3Btn2Text')"
-                    (mousleave)=" mouseOutNav('#container3Btn2', '#nav3Btn2Text')" id="container3Btn2" class="navBtn2">
-
-                    <div id="nav3Btn2Text" class="navBtn2Text"
-                        (mouseover)=" mouseOverNav('#container3Btn2', '#nav3Btn2Text')"
-                        (mousleave)=" mouseOutNav('#container3Btn2', '#nav3Btn2Text')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                            class="bi bi-gear-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                        </svg>
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-        </div>
-
-    </div>
-
-</div>
+<app-navigation></app-navigation>
 <div class="bottombar">
+    <div class="footBtn">
+        <p>
+            <a (mouseover)="displayNav('container3Modal')" (click)="displayNav('container3Modal')">---Display
+                Navigation----
+            </a>
+        </p>
 
-    <a (mouseover)="displayNav('container3Modal')" (click)="displayNav('container3Modal')">---Display Navigation----</a>
+    </div>
+
+
 
 </div>

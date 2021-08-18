@@ -18,6 +18,7 @@
     .container1bg
 
         //background-image: url('/../assets/pexels-ian-beckley-2440079.jpg')
+        //background-image: url('/../assets/pexels-george-becker-333513.jpg')
 
         background-repeat: no-repeat
         background-position: center
@@ -30,7 +31,7 @@
         align-items: center
         justify-content: center
         .container1bg2
-            
+            top: 10vh
             background-image: url('/../assets/NamedLogo(bugfast)white.png')
             background-repeat: no-repeat
             background-position: center
@@ -47,8 +48,7 @@
     width: -webkit-fill-available
     min-height: 25vh
     height: initial
-    min-width: 45vw
-    width: 50vw
+  
     contain: strict
 
 .card:hover
@@ -177,24 +177,39 @@
 .container2
     //background-color: rgb(0, 0, 0)
     min-height: 100vh
-    max-height: 100vh
+    height: 100vh
 
 .container2 #container2foot
-    min-height: 5vh
-    place-items: initial
-    height: 5vh
-    background-color: black
-    contain: content
 
+    position: relative
+    top: 3vh
     width: -webkit-fill-available
+    height: 6vh
 
-.container2 #container2Head
-    min-height: 5vh
-    place-items: initial
-    height: 5vh
-    background-color: black
+    background-color: silver
+    background-image: linear-gradient(360deg, black, #3c3d42)
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+
     contain: content
-    width: -webkit-fill-available
+    display: flex
+    justify-content: space-around
+
+    .footBtn
+        display: flex
+        align-self: center
+        border-radius: 15%
+        border: inset
+        background-color: black
+        background-image: url('/../assets/marjanblan.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        border-color: dimgray
+    p
+        width: fit-content
+        
 
 .container3
     //background-color: rgb(0, 0, 0)
