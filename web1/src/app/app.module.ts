@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { PlayerComponent } from './player/player.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     HeaderComponent,
     ToolbarComponent,
     NavigationComponent,
+    PlayerComponent,
    
   ],
   imports: [

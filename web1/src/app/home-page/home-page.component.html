@@ -114,33 +114,36 @@
     </div>
     <div class="container3" id="container3">
 
-        <div class="verticalDisplay">
-            <div class="displayTitle">
-                <h2>Gallery</h2>
+        <div class="verticalDisplay" id="c3Display">
+            <div class="c3Pad">
+                <h2>Exibition</h2>
+            </div>
+            <div id="playerContainer">
+                <app-player></app-player>
             </div>
 
-            <div class="horizontalDisplay">
-                <img class="imgRectangle" src="/../assets/skyfall1.png" alt="Girl in a jacket">
+            
+            <div class="c3Pad">
                 
-                <img class="imgRectangle" src="/../assets/phonebg4.png" alt="Girl in a jacket">
             </div>
 
+
+        </div>
+        <div class="bottombar">
+            <div class="footBtn">
+                <p>
+                    <a (mouseover)="displayNav('container3Modal')" (click)="displayNav('container3Modal')">---Display
+                        Navigation----
+                    </a>
+                </p>
+        
+            </div>
+        
+        
+        
         </div>
     </div>
 
 
 </div>
 <app-navigation></app-navigation>
-<div class="bottombar">
-    <div class="footBtn">
-        <p>
-            <a (mouseover)="displayNav('container3Modal')" (click)="displayNav('container3Modal')">---Display
-                Navigation----
-            </a>
-        </p>
-
-    </div>
-
-
-
-</div>
