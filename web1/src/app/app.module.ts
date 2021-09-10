@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PlayerComponent } from './player/player.component';
+import { IntroPageComponent } from './intro-page/intro-page.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { PlayerComponent } from './player/player.component';
     ToolbarComponent,
     NavigationComponent,
     PlayerComponent,
+    IntroPageComponent,
    
   ],
   imports: [
