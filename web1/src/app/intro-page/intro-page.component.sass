@@ -138,7 +138,7 @@
     color: white
 #word1
     font-weight: 700 !important
-    animation: glitch 2000ms infinite
+    
 #word3
     
 
@@ -161,17 +161,20 @@
         text-shadow: 0.025em 0em rgba(255,0,0,.75),0.05em 0em rgba(0,255,0,.75),-0.025em -0.05em rgba(0,0,255,.75)
 
 #line1
-
+    position: relative
     animation: typing1 15s infinite steps(43)
     color: white
     font-family: consolas
     overflow: hidden
     white-space: nowrap
     width: 43ch
+    -webkit-text-size-adjust: none
+    margin: 0
 #line1 span
     position: absolute
     top: 0
-    left: 31ch
+    left:  31ch
+    -webkit-text-size-adjust: none
 
 #line1 span:first-child
     animation: glitch 600ms infinite
@@ -180,6 +183,8 @@
     clip-path: polygon(0 0,100% 0, 100% 45%, 0 45%)
     transform: translate(-0.05em -0.025em)
     opacity: 0.9
+    -webkit-text-size-adjust: none
+    
 #line1 span:last-child
     animation: glitch 350ms infinite
   
@@ -187,6 +192,7 @@
     clip-path: polygon(0 80%,100% 50%, 100% 100%, 0 100%)
     transform: translate(0.05em 0.025em)
     opacity: 0.9
+    -webkit-text-size-adjust: none
 #line2
     color: white
     animation: typing2 15s infinite steps(26)

@@ -16,7 +16,6 @@
     align-items: center
     justify-content: space-around
 
-    
     .container1bg
 
         //background-image: url('/../assets/pexels-ian-beckley-2440079.jpg')
@@ -53,7 +52,6 @@
     height: initial
     overflow: auto
     overflow: hidden
-    
 
 .card:hover
 
@@ -87,14 +85,15 @@
     background-position: top
     background-size: cover
     z-index: -1
-    min-height:20px
+    min-height: 20px
     height: 23vh
     min-width: 80px
     width: 100%
-    
+
 .card img
     filter: grayscale(1)
     min-width: 50px
+    height: 20vh
 .card p
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
     font-size: 200%
@@ -183,7 +182,7 @@
 .container2 #container2foot
 
     position: relative
-    
+
     width: -webkit-fill-available
     height: 6vh
 
@@ -193,21 +192,20 @@
     background-position: top
     background-size: cover
 
-    
     display: flex
     justify-content: space-around
 
-    .footBtn
-        display: flex
-        align-self: center
-        border-radius: 15%
-        border: inset
-        background-color: black
-        background-image: url('/../assets/marjanblan.jpg')
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
-        border-color: dimgray
+.footBtn
+    display: flex
+    align-self: center
+    border-radius: 15%
+    border: inset
+    background-color: black
+    background-image: url('/../assets/marjanblan.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    border-color: dimgray
     p
         width: fit-content
 
@@ -219,7 +217,21 @@
     flex-direction: column
     place-content: space-between
     align-items: center
+.container3 #container3foot
 
+    position: relative
+
+    width: -webkit-fill-available
+    height: 6vh
+
+    background-color: silver
+    background-image: linear-gradient(360deg, black, #3c3d42)
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+
+    display: flex
+    justify-content: space-around
 .picGallery
     max-width: -webkit-fill-available
     display: flex
@@ -422,13 +434,14 @@
 #c3Display
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: space-around
+
 .c3Pad
     height: 10vh
 #c2Display
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: space-around
     align-items: center
 .c2Pad
     height: 5vh

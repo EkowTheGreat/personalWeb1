@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ComingSoonComponent } from '../coming-soon/coming-soon.component';
 import { HomePageComponent } from '../home-page/home-page.component';
 import { IntroPageComponent } from '../intro-page/intro-page.component';
 import { NavigationComponent } from '../navigation/navigation.component';
@@ -19,6 +20,10 @@ const routes = [
   {
     path: '',
     component: IntroPageComponent
+  },
+  {
+    path: 'coming-soon',
+    component: ComingSoonComponent
   }
 
 ];
