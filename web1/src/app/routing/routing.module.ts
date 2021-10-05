@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BasiliskComponent } from '../basilisk/basilisk.component';
 import { ComingSoonComponent } from '../coming-soon/coming-soon.component';
 import { HomePageComponent } from '../home-page/home-page.component';
 import { IntroPageComponent } from '../intro-page/intro-page.component';
@@ -24,6 +25,10 @@ const routes = [
   {
     path: 'coming-soon',
     component: ComingSoonComponent
+  },
+  {
+    path: 'basilisk',
+    component: BasiliskComponent
   }
 
 ];

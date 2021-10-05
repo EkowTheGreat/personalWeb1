@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { PlayerComponent } from './player/player.component';
 import { IntroPageComponent } from './intro-page/intro-page.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { BasiliskComponent } from './basilisk/basilisk.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     PlayerComponent,
     IntroPageComponent,
     ComingSoonComponent,
+    BasiliskComponent,
    
   ],
   imports: [
