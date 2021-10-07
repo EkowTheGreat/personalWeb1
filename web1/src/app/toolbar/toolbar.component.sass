@@ -8,24 +8,40 @@
 #logo:hover
     background-image: url('/../assets/logoBadge3.png')
     background-color: white
+#basilisk
+    
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: contain
+
 #middle
-    width: 60vw
+    width: 50vw
 #buttons
-    width: 30vw
+    width: 40vw
     display: flex
     flex-direction: row
-    justify-content: space-evenly
+    justify-content: space-between
+    align-items: center
 
 .button
-    text-align: -webkit-center
+    display: none
     width: -webkit-fill-available
+    height: 100%
+    a
+
+        display: flex
+
+        justify-content: center
+        align-items: center
     img
         filter: grayscale(0)
         min-width: 50px
-        height: 100%
+        width: 45%
 .button:hover
     background-color: white
 .toolbar
     position: absolute
     z-index: 5
     min-height: 40px
+    height: 10vh
+    background-color: whitesmoke
