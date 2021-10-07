@@ -19,11 +19,11 @@ const routes = [
     component: PlayerComponent
   },
   {
-    path: '',
+    path: 'intro',
     component: IntroPageComponent
   },
   {
-    path: 'coming-soon',
+    path: '',
     component: ComingSoonComponent
   },
   {
